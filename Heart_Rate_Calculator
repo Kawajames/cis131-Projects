@@ -1,0 +1,19 @@
+# File Name: Heart Rate Calculator - CIS131
+# Description: This script calculates and displays a user's maximum heart rate and target heart rate range based on their age
+# Author: Dakota Kartchner 
+# Date Created: 1/25/2025
+
+
+# Prompt for user's age
+age = int(input("Please enter your age in years: "))
+
+# Calculate maximum heart rate
+max_heart_rate = 220 - age
+
+# Calculate target heart rate range (50% to 85% of max heart rate)
+lower_target = 0.50 * max_heart_rate
+upper_target = 0.85 * max_heart_rate
+
+# Print results
+print("Your maximum heart rate is:", max_heart_rate, "beats per minute")
+print("Your target heart rate range is:", round(lower_target), "to", round(upper_target), "beats per minute.")
