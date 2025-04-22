@@ -6,7 +6,7 @@
 import shodan
 import json
 
-SHODAN_API_KEY = 'fAuYSKAo3TmHaj7HK1JRSkIhdxBIPJCb'
+SHODAN_API_KEY = ''
 api_object = shodan.Shodan(SHODAN_API_KEY)
 search_query = "'in-tank inventory' state:'AZ'"
 
